@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_playground/animated_custom_paint/animated_custom_paint.dart';
 import 'package:flutter_playground/authentication_scope/auth_screen.dart';
 import 'package:flutter_playground/custom_paint_map_pin/custom_paint_pin_screen.dart';
+import 'package:flutter_playground/google_maps_screen/google_maps_screen.dart';
 
 class FeaturesMenuList extends StatelessWidget {
   const FeaturesMenuList({super.key});
@@ -20,16 +21,15 @@ class FeaturesMenuList extends StatelessWidget {
         //     );
         //   },
         // ),
-        // TODO(OT): commit this feature
-        // ListTile(
-        //   title: const Text(GoogleMapsScreen.screenName),
-        //   onTap: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(builder: (context) => const GoogleMapsScreen()),
-        //     );
-        //   },
-        // ),
+        ListTile(
+          title: const Text(GoogleMapsScreen.screenName),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const GoogleMapsScreen()),
+            );
+          },
+        ),
         ListTile(
           title: const Text('CustomPaintPinScreen'),
           onTap: () {
